@@ -77,3 +77,36 @@ main section div input {
         margin-left: 1rem;
     }
 }
+
+.article-frescuras{
+    background-image: url(../multimedia/frescuras.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.article-frescuras h1{
+    color: #fefefe;
+    font-size: 8rem;
+    text-align: center;
+}
+
+.article-frescuras table{
+    font-size: 2rem;
+    color: #fefefe;
+    display: inline-block;
+    width: 70%;
+    height: 100vh;
+    text-align: center;
+    border-radius: 400px;
+}
+
+.article-frescuras table th, td, tr{
+    padding:1rem;
+    background-color: #030807;
+}
