@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 html{
@@ -34,38 +35,128 @@ header ul a{
     text-decoration: none;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
 main h1{
     font-size: 4rem;
     margin-top: 3rem;
     border: solid 5px black;
-    padding: .5rem;
+    padding: .5rem; 
     display: inline-block;
+    margin-left: 33rem;
 }
 
 main section{
-    font-size: 2.5rem;
     margin: 3rem;
+}
+
+form{
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main section div{
-    margin-top: 2rem;
-    list-style-type: georgian;
+.contenedor-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 3rem;
 }
 
-main section div input {
-    width: 32rem;
-    margin-left: 3rem;
+.contenedor-inputs input{ 
+    height: 4rem;
+    width: 40rem;
+    padding: 5px 10px;
     font-size: 2rem;
+    border: #ccc;
+    border-radius: 8px;
 }
+
+.contenedor-inputs label{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contenedor-inputs span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    border: solid 1px #030807;
+    border-radius: 15px;
+    padding: 6px 12px 6px 15px;
+    background-color: #ccc;
+}
+
+.alerta-incorrect {
+    margin-bottom: 1.5rem;
+    padding: 5px;
+    font-weight: bold;
+    background-color: rgb(239, 78, 78);
+    font-size:2rem;
+    border: solid 2px #030807;
+    border-radius: 10px;
+    display: none;
+}
+
+.span-incorrect {
+    background-color: red;
+}
+
+.alerta-incorrect span {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+
+
+#envio-form {
+    width: 10rem;
+    height: 5rem;
+    padding: 10px;
+}
+
+.contenedor-eventos {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+
+.contenedor-eventos h1{
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.titulo-simulador {
+    font-size: 4rem;
+    margin-left: 3px;
+}
+
+.div-eventos p{
+    background-color: aqua;
+    display: inline-block;
+    font-size: 2.5rem;
+    margin: 1rem 3rem;
+    padding: 8px;
+    border: solid 3px #030807;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:500px) {
     header ul a{
@@ -78,7 +169,7 @@ main section div input {
     }
 }
 
-.article-frescuras{
+/* .article-frescuras{
     background-image: url(../multimedia/frescuras.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -109,4 +200,4 @@ main section div input {
 .article-frescuras table th, td, tr{
     padding:1rem;
     background-color: #030807;
-}
+} */
