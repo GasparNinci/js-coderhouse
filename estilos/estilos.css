@@ -115,25 +115,36 @@ form{
     padding: 10px;
 }
 
-.contenedor-eventos {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
+
+
+.titulo-prestamo{
+    background-color: #030807;
+    color: #fefefe;
+    text-align: center;
+   
+    font-size: 3rem;
+    font-weight: bold;
+    border: solid 2px #030807;
+    display: inline-block;
+    margin: 1.5rem 60rem;
+    padding: 1rem;
 }
 
-.contenedor-eventos h1{
-    display: inline-block;
-    margin-left: 2px;
-}
+
 
 .titulo-simulador {
     font-size: 4rem;
     margin-left: 3px;
 }
 
+.div-eventos {
+    width: 100%;
+    text-align: center;
+}
+
 .div-eventos p{
     background-color: aqua;
+    line-height: 30px;
     display: inline-block;
     font-size: 2.5rem;
     margin: 1rem 3rem;
