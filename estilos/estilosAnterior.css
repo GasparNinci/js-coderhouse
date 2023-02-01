@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #fefefe;
+    color: #030807;
+    font-family: 'Times New Roman', Times, serif
+}
+
+
+header {
+    background-color: #030807;
+    position: sticky;
+    top: 0; 
+    z-index: 9;
+}
+
+
+
+header ul {
+    list-style-type: none;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header ul a {
+    font-size: 3rem;
+    color: #fefefe;
+    text-decoration: none;
+}
+
+
+
+                        /* MODO OSCURO */
+.main-dark-mode {
+    background-color: #030807;
+    color: #fefefe;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.button-header {
+    color: #fefefe;
+    font-size: 3rem;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: black;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.lista-dark {
+    color: #030807;
+}
+
+.header-dark {
+    color: #030807;
+}
+
+.titulo-main {
+    font-size: 4rem;
+    margin-top: 3rem;
+    border: solid 5px black;
+    padding: 1rem;
+    border-radius: 8px;
+    display: inline-block;
+    margin-left: 33rem;
+}
+
+.titulo-simulador {
+    font-size: 4rem;
+    margin-top: 3rem;
+    border: solid 5px black;
+    padding: 1rem;
+    border-radius: 8px;
+    display: inline-block;
+    
+}
+
+
+
+
+
+                                    /* fin modo oscuro */
+
+
+
+main section {
+    margin: 3rem;
+}
+
+form {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+                                        /* INPUTS */
+
+.contenedor-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 3rem;
+}
+
+.contenedor-inputs input {
+    height: 4rem;
+    width: 40rem;
+    padding: 5px 10px;
+    font-size: 2rem;
+    border: #ccc;
+    border-radius: 8px;
+}
+
+.contenedor-inputs label {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contenedor-inputs span {
+    color: #030807;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border: solid 1px #030807;
+    border-radius: 15px;
+    padding: 6px 12px 6px 15px;
+    background-color: #ccc;
+}
+
+.alerta-incorrect {
+    color: #030807;
+    margin-bottom: 1.5rem;
+    padding: 5px;
+    font-weight: bold;
+    background-color: rgb(239, 78, 78);
+    font-size: 2rem;
+    border: solid 2px #030807;
+    border-radius: 10px;
+    display: none;
+}
+
+.span-incorrect {
+    background-color: red;
+}
+
+.alerta-incorrect span {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+
+
+#envio-form {
+    width: 10rem;
+    height: 5rem;
+    padding: 10px;
+}
+
+/* EVENTO */
+
+.titulo-prestamo {
+    position: relative;
+    background-color: #030807;
+    width: 100%;
+    color: #fefefe;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    border: solid 2px #030807;
+    display: flex;
+    justify-content: center;
+    margin: 7rem 0rem;
+    padding: 1rem;
+    line-height: 7rem;
+}
+
+
+.div-eventos {
+    width: 100%;
+    text-align: center;
+}
+
+.div-eventos p {
+    color: #030807;
+    background-color: aqua;
+    line-height: 30px;
+    display: inline-block;
+    font-size: 2.5rem;
+
+    margin: 1rem 0.5rem;
+    padding: 8px;
+    border: solid 3px #030807;
+    border-radius: 10px;
+}
+
+
+
+
+.titulo-dark {
+    border: solid 2px white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+    header ul a {
+        font-size: 1.8rem;
+    }
+
+    main h1 {
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+}
+
+/* .article-frescuras{
+    background-image: url(../multimedia/frescuras.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.article-frescuras h1{
+    color: #fefefe;
+    font-size: 8rem;
+    text-align: center;
+}
+
+.article-frescuras table{
+    font-size: 2rem;
+    color: #fefefe;
+    display: inline-block;
+    width: 70%;
+    height: 100vh;
+    text-align: center;
+    border-radius: 400px;
+}
+
+.article-frescuras table th, td, tr{
+    padding:1rem;
+    background-color: #030807;
+} */

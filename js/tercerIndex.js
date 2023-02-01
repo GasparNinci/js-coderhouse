@@ -25,8 +25,8 @@ function credAPagar (credito, interes, exponente) {
     return credito * (Math.pow((1+(interes/100)), exponente))
 }
 
-function resta (numerador, sustraendo) {
-    return numerador - sustraendo
+function resta (minuendo, sustraendo) {
+    return minuendo - sustraendo
 }
 
 
@@ -37,7 +37,19 @@ function pasarHtml (array) {
         <div class="titulo-prestamo"> Simulación número  ${i} </div>
         <div class="div-eventos">
             <p> 
-                Si saca un <u>préstamo</u> de <b>$${element.montoCredito}</b> a <b>${element.cantidadCuotas} meses</b>, el total a pagar con un <u>interés</u> del <b>${element.interes}% mensual</b> será de <b>$${credAPagar(element.montoCredito, element.interes, element.cantidadCuotas).toFixed(2)}</b> y su <u>diferencia</u> será de <b>$${resta(credAPagar(element.montoCredito, element.interes, element.cantidadCuotas), element.montoCredito).toFixed(2)}</b>
+            <b><u>Préstamo</u></b>: $${element.montoCredito}<br>
+            </p>
+            <p>
+            <u><b>Cuotas Mensuales</b></u>: ${element.cantidadCuotas} <br>
+            </p>
+            <p>
+            <b><u>Interés</u></b>: ${element.interes}% mensual<br>
+            </p>
+            <p>
+            <b><u>Monto total a pagar</b></u>: $${credAPagar(element.montoCredito, element.interes, element.cantidadCuotas).toFixed(2)}
+            </p>
+            <p>
+            <b><u>Diferencia</u></b>(pérdida): $${resta(credAPagar(element.montoCredito, element.interes, element.cantidadCuotas), element.montoCredito).toFixed(2)}</b>
             </p>
         </div>
         `
