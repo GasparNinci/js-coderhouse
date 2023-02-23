@@ -21,7 +21,7 @@ header {
     background: linear-gradient(to bottom, #181616, #0c1010);
     position: sticky;
     top: 0;
-    z-index: 9;
+    z-index: 1;
     padding: 1.5rem;
     border-bottom: solid 2px white;
 }
@@ -194,19 +194,30 @@ i {
 
             /* SECTION FETCH */
 
-.contenedor-botones-index {
+.contenedor-botones-index form{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    padding-bottom: 3rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    font-size: 2.3rem;
 }
 
-.contenedor-botones-index button {
+.contenedor-botones-index input {
     color: #030807;
     font-weight: bold;
-    font-size: 2rem;
+    text-align: center;
+    height: 4rem;
+    border-radius: 10px;
     width: 15rem;
-    height: 5rem;
-    border-radius: 5px;
+    font-size: 2rem;
+    transition: 1s;
+    margin-top: 1rem;
+    padding: .5rem 0px;
+}
+
+.submit-cartas:hover{
+    background-color: gold;
 }
 
 .contenedor-yugi{
@@ -219,18 +230,30 @@ i {
 
 .carta {
     margin: 2rem;
+    text-align: center  ;
 }
 
-/* CARTAS FAVORITAS */
 
-#input-favear{
-    display: none;
+/* PRUEBA FAVORITOS*/
+
+.button-fav,
+.button-fav-quitar{
+    border: none;
+    background: none;
+    font-size: 3rem;
+    padding: .7rem;
+    border-radius: 50px;
+    transition: .5s;
 }
 
-#label-favear {
-    cursor: pointer;
-    transition: all 1.5s;
+.button-fav:hover {
+    font-size: 3.5rem;
 }
+
+.button-fav-quitar:hover {
+    font-size: 3.5rem;
+}
+
 
 
 /* PAGINA CONTACTO */
@@ -311,7 +334,7 @@ select option{
     height: 20rem;
 }
 
-                    /*  */
+                    /* CONTACTO */
 
 #checkbox-newsletter {
     color: gold;
@@ -403,6 +426,15 @@ select option{
     font-style: italic;
     text-align: center;
 }
+
+
+
+#generador-favoritos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 
 
@@ -537,3 +569,7 @@ footer {
         margin-left: 1rem;
     }
 }
+
+
+
+

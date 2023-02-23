@@ -18,7 +18,7 @@ const alerta = document.querySelector(".alerta-incorrect")
 
 
 checkbox.addEventListener("change", (e) => {
-    e.preventDefault()
+    
     const agregarInput = document.querySelector(".agregar-input")
 
     if (e.target.checked) {

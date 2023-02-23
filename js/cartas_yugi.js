@@ -1,5 +1,4 @@
-{
-    "data": [
+const yugi = [
         {
             "id": 34541863,
             "name": "\"A\" Cell Breeding Device",
@@ -1323,4 +1322,3 @@
             ]
         }
     ]
-}
