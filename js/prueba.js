@@ -62,7 +62,7 @@ const pushCartasFavoritas = () => {
                     fontSize: "1.8rem",
                     fontWeight: "bold",
                     marginTop: "6%",
-                    zIndex: "0",
+                    zIndex: "3",
                 }
             }).showToast();
         }
