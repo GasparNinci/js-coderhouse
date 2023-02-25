@@ -244,14 +244,15 @@ i {
     padding: .7rem;
     border-radius: 50px;
     transition: .5s;
+    cursor: pointer;
 }
 
 .button-fav:hover {
-    font-size: 3.5rem;
+    font-size: 4rem;
 }
 
 .button-fav-quitar:hover {
-    font-size: 3.5rem;
+    font-size: 4rem;
 }
 
 

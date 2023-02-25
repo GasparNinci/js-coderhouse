@@ -1,7 +1,7 @@
 const contCartas = document.querySelector(".contenedor-yugi")
 
 
-const cartas = (array ) => {
+const cartas = (array) => {
     const nodos = array.reduce((acc, element) => {
         return acc + `
         <div class="carta" id="carta-${element.id}">
@@ -15,7 +15,7 @@ const cartas = (array ) => {
                 <i class="estrella fa-regular fa-star" ></i>
             </button>
         </div>
-        ` 
+        `
     }, "")
     contCartas.innerHTML = nodos
 }
@@ -27,7 +27,7 @@ cartas(yugi)
 
 let favoritos = []
 
-const pushArray= (array, valor) => {
+const pushArray = (array, valor) => {
     array.push(valor)
 }
 
@@ -49,8 +49,24 @@ const pushCartasFavoritas = () => {
             })
             pushArray(favoritos, catchCarta)
             subirLs("añadido a favoritos", favoritos)
+
+            Toastify({
+                text: `La carta número ${Number(extraerId)} ha sido añadida a favoritos`,
+                className: "info-toast",
+                gravity: "top",
+                position: "center",
+                duration: 1500,
+                style: {
+                    color: "#030604",
+                    background: "gold",
+                    fontSize: "1.8rem",
+                    fontWeight: "bold",
+                    marginTop: "6%",
+                    zIndex: "0",
+                }
+            }).showToast();
         }
-    
+
     })
 }
 

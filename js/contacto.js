@@ -1,7 +1,7 @@
 const envioForm = document.querySelector("#form-contacto")
 
 const checkbox = document.querySelector
-("#checkbox-newsletter")
+    ("#checkbox-newsletter")
 
 const inputNombre = document.querySelector("#input-nombre")
 
@@ -18,7 +18,7 @@ const alerta = document.querySelector(".alerta-incorrect")
 
 
 checkbox.addEventListener("change", (e) => {
-    
+
     const agregarInput = document.querySelector(".agregar-input")
 
     if (e.target.checked) {
@@ -49,7 +49,7 @@ envioForm.onsubmit = (event) => {
             timer: 1280,
             buttons: false
         })
-        
+
         inputNombre.style.backgroundColor = "#fefefe"
         inputNombre.value = ""
 
@@ -70,15 +70,15 @@ inputSelect.addEventListener("change", () => {
     if (inputSelect.value === "slifer") {
         inputSelect.style.backgroundColor = "red"
         pushImg.innerHTML = `<img src="../multimedia/imagenes_pagina/slifer.png">`
-    } 
+    }
     else if (inputSelect.value === "obelisk") {
         inputSelect.style.backgroundColor = "lightblue"
         pushImg.innerHTML = `<img src="../multimedia/imagenes_pagina/obelisk.png">`
-    } 
+    }
     else if (inputSelect.value === "exodia") {
         inputSelect.style.backgroundColor = "gold"
         pushImg.innerHTML = `<img src="../multimedia/imagenes_pagina/exodia2.png">`
-    } 
+    }
     else if (inputSelect.value === "ra") {
         inputSelect.style.backgroundColor = "yellow"
         pushImg.innerHTML = `<img src="../multimedia/imagenes_pagina/ra.png">`
